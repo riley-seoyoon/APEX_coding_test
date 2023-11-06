@@ -1,0 +1,13 @@
+name: apex
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python >= 3.11
+  - pip
+  - pip:
+    - numpy
+    - pandas
+    - python-docx
+    - scipy
+    - matplotlib
