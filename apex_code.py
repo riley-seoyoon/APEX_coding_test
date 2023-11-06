@@ -8,7 +8,7 @@ import scipy.stats
 import pandas as pd
 import docx
 
-os.chdir("D:/data")
+os.chdir("D:\APEX_coding_test")
 
 # Read excel file into dataframe
 data = pd.read_excel("APEX_input.xlsx").set_index("group_num")
@@ -48,6 +48,7 @@ for i in range(df.shape[0]):
     for j, cell in enumerate(row.cells):
         cell.text = str(values[i, j]) 
 
+table.cell(1, 0).text = '1 (control)'
 table.style = "Table Grid"
 
 # Save document
